@@ -65,9 +65,6 @@ public class PlayerInfo : MonoBehaviour
         UIController.instance.xpSlider.maxValue = getNextLevelXP();
         UIController.instance.xpSlider.value = currentXP;
         UIController.instance.xpText.text = currentXP.ToString() + " / " + getNextLevelXP().ToString();
-
-        // XXX
-        StartCoroutine(testLevelUp());
     }
 
     IEnumerator testLevelUp() {
