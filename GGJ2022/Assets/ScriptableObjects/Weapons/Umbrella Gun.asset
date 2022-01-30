@@ -12,9 +12,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2cdd5f26d027bf488a75661539e41c5, type: 3}
   m_Name: Umbrella Gun
   m_EditorClassIdentifier: 
-  rateOfFire: 1
-  projectileSpeed: 1
-  projectileHoming: 0
-  areaOfEffect: 0
-  projectileBurst: 1
-  size: 1
+  currentProfile: 0
+  profiles:
+  - rateOfFire: 1
+    projectileSpeed: 1
+    projectileHoming: 0
+    areaOfEffect: 0
+    projectileCount: 4
+    size: 1
+  - rateOfFire: 1
+    projectileSpeed: 1.2
+    projectileHoming: 0
+    areaOfEffect: 0
+    projectileCount: 4
+    size: 1
+  - rateOfFire: 1
+    projectileSpeed: 1.2
+    projectileHoming: 0
+    areaOfEffect: 0
+    projectileCount: 4
+    size: 1.2
+  - rateOfFire: 1
+    projectileSpeed: 1.2
+    projectileHoming: 0
+    areaOfEffect: 0
+    projectileCount: 5
+    size: 1.2
+  - rateOfFire: 1
+    projectileSpeed: 1.4
+    projectileHoming: 0
+    areaOfEffect: 0
+    projectileCount: 5
+    size: 1.2
+  - rateOfFire: 1
+    projectileSpeed: 1.4
+    projectileHoming: 0
+    areaOfEffect: 0
+    projectileCount: 5
+    size: 1.4
