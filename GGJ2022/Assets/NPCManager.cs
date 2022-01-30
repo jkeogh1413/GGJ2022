@@ -100,6 +100,7 @@ public class NPCManager : MonoBehaviour
     }
 
     public void Disarm() {
+        AudioManager.EnemyDisarmed();
         if (mode == "flee")
             return;
         mode = "flee";
@@ -108,7 +109,10 @@ public class NPCManager : MonoBehaviour
         StartCoroutine(FleeCoroutine());
     }
 
-    public void TakeDamage(float damage) {
+
+    public void TakeDamage(float damage)
+    {
+        AudioManager.EnemyTakesDamage();
         curHealth -= damage;
         if (curHealth <= 0)
             Die();
@@ -149,7 +153,7 @@ public class NPCManager : MonoBehaviour
             if (openUmbrella != null)
                 openUmbrella.SetActive(true);
             Disarm();
-            Destroy(projectile.gameObject);
+            projectile.Collided(this);
 
             if (PlayerInfo.instance != null)
                 PlayerInfo.instance.GainXP();
