@@ -218,12 +218,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalHealth: 100
-  speed: 0.1
+  speed: 0.5
   coreDamage: 10
   coreDamageTick: 1
   playerDamage: 2
   mode: wander
-  wanderRadius: 0.5
+  wanderRadius: 2
   openUmbrella: {fileID: 639831408302953972}
   HappyCatPrefab: {fileID: 1299587937744100599}
   AngryCatPrefab: {fileID: 7185346516580382019, guid: eb31dfd8a10aef6468935827eb65a8e2, type: 3}

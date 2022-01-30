@@ -272,7 +272,7 @@ MonoBehaviour:
   coreDamageTick: 1
   playerDamage: 2
   mode: rush
-  wanderRadius: 0.5
+  wanderRadius: 2
   openUmbrella: {fileID: 2358655895004560616}
   HappyCatPrefab: {fileID: 1299587937744100599, guid: fd50d480125e3c04eb07b20cfcdc9abc, type: 3}
   AngryCatPrefab: {fileID: 7185346516580382019}
