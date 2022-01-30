@@ -14,15 +14,21 @@ public class TreeSpawner : MonoBehaviour
 
     private void Awake() {
         instance = this;
-
         tileWorldLocations = new List<Vector3>();
-        foreach (var pos in tilemap.cellBounds.allPositionsWithin) {
-            Vector3Int localPlace = new Vector3Int(pos.x, pos.y, pos.z);
-            Vector3 place = tilemap.CellToWorld(localPlace);
-            if (tilemap.HasTile(localPlace)) {
-                tileWorldLocations.Add(place);
+
+        tilemap.CompressBounds();
+        BoundsInt bounds = tilemap.cellBounds;
+        for (int x = bounds.min.x; x < bounds.max.x; x++) {
+            for (int y = bounds.min.y; y < bounds.max.y; y++) {
+                Vector3Int cellPos = new Vector3Int(x, y, 0);
+                var sprite = tilemap.GetSprite(cellPos);
+                var tile = tilemap.GetTile(cellPos);
+                if (sprite && tile) {
+                    tileWorldLocations.Add(tilemap.CellToWorld(cellPos));
+                }
             }
         }
+
     }
 
     public static void SpawnNewTrees() {
