@@ -15,6 +15,18 @@ MonoBehaviour:
   currentProfile: 0
   profiles:
   - range: 3
+    rateOfFire: 0.3
+    projectileDamage: 10
+    projectileSpeed: 4
+    projectileLifespan: 5
+    projectileCount: 1
+    projectileHoming: 0
+    aoeRadius: -1
+    aoeLimit: 0
+    weaponSize: 0
+    weaponSpeed: 0
+    cooldown: 0
+  - range: 3
     rateOfFire: 0.5
     projectileDamage: 10
     projectileSpeed: 4
@@ -27,33 +39,9 @@ MonoBehaviour:
     weaponSpeed: 0
     cooldown: 0
   - range: 3
-    rateOfFire: 0.65
+    rateOfFire: 0.5
     projectileDamage: 10
-    projectileSpeed: 4
-    projectileLifespan: 5
-    projectileCount: 1
-    projectileHoming: 0
-    aoeRadius: -1
-    aoeLimit: 0
-    weaponSize: 0
-    weaponSpeed: 0
-    cooldown: 0
-  - range: 3.5
-    rateOfFire: 0.65
-    projectileDamage: 10
-    projectileSpeed: 4
-    projectileLifespan: 5
-    projectileCount: 1
-    projectileHoming: 0
-    aoeRadius: -1
-    aoeLimit: 0
-    weaponSize: 0
-    weaponSpeed: 0
-    cooldown: 0
-  - range: 3.5
-    rateOfFire: 0.8
-    projectileDamage: 10
-    projectileSpeed: 4
+    projectileSpeed: 6
     projectileLifespan: 5
     projectileCount: 1
     projectileHoming: 0
@@ -63,9 +51,9 @@ MonoBehaviour:
     weaponSpeed: 0
     cooldown: 0
   - range: 4
-    rateOfFire: 0.8
+    rateOfFire: 0.5
     projectileDamage: 10
-    projectileSpeed: 4
+    projectileSpeed: 6
     projectileLifespan: 5
     projectileCount: 1
     projectileHoming: 0
@@ -74,13 +62,25 @@ MonoBehaviour:
     weaponSize: 0
     weaponSpeed: 0
     cooldown: 0
-  - range: 4
-    rateOfFire: 1
+  - range: 5
+    rateOfFire: 0.75
     projectileDamage: 10
-    projectileSpeed: 4
+    projectileSpeed: 6
     projectileLifespan: 5
     projectileCount: 1
     projectileHoming: 0
+    aoeRadius: -1
+    aoeLimit: 0
+    weaponSize: 0
+    weaponSpeed: 0
+    cooldown: 0
+  - range: 5
+    rateOfFire: 0.75
+    projectileDamage: 10
+    projectileSpeed: 6
+    projectileLifespan: 5
+    projectileCount: 1
+    projectileHoming: 1
     aoeRadius: -1
     aoeLimit: 0
     weaponSize: 0
