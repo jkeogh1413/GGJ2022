@@ -19,7 +19,8 @@ public class TreeSpawner : MonoBehaviour
         foreach (var pos in tilemap.cellBounds.allPositionsWithin) {
             Vector3Int localPlace = new Vector3Int(pos.x, pos.y, pos.z);
             Vector3 place = tilemap.CellToWorld(localPlace);
-            if (tilemap.HasTile(localPlace)) {
+            TileBase tile = tilemap.GetTile(localPlace);
+            if (tile != null && (tile.name == "spritesheet_0" || tile.name == "spritesheet_1" || tile.name == "spritesheet_2")) {
                 tileWorldLocations.Add(place);
             }
         }
