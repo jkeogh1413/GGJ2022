@@ -12,6 +12,7 @@ public class PlayerInfo : MonoBehaviour
         public GameObject weapon;
         public WeaponStats weaponStats;
         public PowerUp prefab;
+        public GameObject notification;
     }
 
     public static PlayerInfo instance;
@@ -26,6 +27,7 @@ public class PlayerInfo : MonoBehaviour
     public float levelBaseXP = 500f;
     public float levelXPMultiplier = 1.2f;
     public PowerUpTrack[] powerUps;
+    public GameObject[] powerUpSpawns;
 
     int curLevel = 1;
 
@@ -63,6 +65,16 @@ public class PlayerInfo : MonoBehaviour
         UIController.instance.xpSlider.maxValue = getNextLevelXP();
         UIController.instance.xpSlider.value = currentXP;
         UIController.instance.xpText.text = currentXP.ToString() + " / " + getNextLevelXP().ToString();
+
+        // XXX
+        StartCoroutine(testLevelUp());
+    }
+
+    IEnumerator testLevelUp() {
+        while (true) {
+            LevelUp();
+            yield return new WaitForSeconds(10f);
+        }
     }
 
     // Update is called once per frame
@@ -111,11 +123,19 @@ public class PlayerInfo : MonoBehaviour
             .OrderBy(x => Random.Range(0f, 1f))
             .Where(x => (x.weapon != null && !x.weapon.activeInHierarchy) || x.weaponStats.currentProfile < x.weaponStats.profiles.Count() - 1)
             .Take(2);
+
+        int spawnIndex = 0;
         foreach (var powerUpTrack in powerUpsToSpawn)
         {
-            var point = Random.insideUnitCircle * 4;
+            Vector2 point = Vector2.zero;
+            if (powerUpSpawns.Length > 0) {
+                point = powerUpSpawns[spawnIndex].transform.position;
+                spawnIndex += 1;
+            } else {
+                point = Random.insideUnitCircle * 4;
+            }
             var powerup = Instantiate(powerUpTrack.prefab, new Vector3(point.x, point.y, 0), Quaternion.identity).GetComponent<PowerUp>();
-            powerup.Init(powerUpTrack.icon, powerUpTrack.weapon, powerUpTrack.weaponStats);
+            powerup.Init(powerUpTrack.icon, powerUpTrack.weapon, powerUpTrack.weaponStats, powerUpTrack.notification);
         }
     }
 

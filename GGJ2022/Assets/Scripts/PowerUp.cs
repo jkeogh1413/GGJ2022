@@ -8,6 +8,7 @@ public class PowerUp : MonoBehaviour
     public WeaponStats weaponStatsToUpgrade;
     public SpriteRenderer iconRenderer;
     public float lifespan = 10f;
+    public GameObject notification;
 
     private float birthtime;
 
@@ -24,11 +25,12 @@ public class PowerUp : MonoBehaviour
         }
     }
 
-    public void Init(Sprite icon, GameObject weaponToEnable, WeaponStats weaponStatsToUpgrade)
+    public void Init(Sprite icon, GameObject weaponToEnable, WeaponStats weaponStatsToUpgrade, GameObject notification)
     {
         iconRenderer.sprite = icon;
         this.weaponToEnable = weaponToEnable;
         this.weaponStatsToUpgrade = weaponStatsToUpgrade;
+        this.notification = notification;
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -44,6 +46,7 @@ public class PowerUp : MonoBehaviour
             {
                 weaponStatsToUpgrade.Upgrade();
             }
+            notification.SetActive(true);
 
             foreach (PowerUp power in GameObject.FindObjectsOfType<PowerUp>()) {
                 if (power != this)
