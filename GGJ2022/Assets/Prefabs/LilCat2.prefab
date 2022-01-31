@@ -270,7 +270,7 @@ MonoBehaviour:
   speed: 2
   coreDamage: 25
   coreDamageTick: 1
-  playerDamage: 2
+  playerDamage: 10
   mode: rush
   wanderRadius: 2
   openUmbrella: {fileID: 2358655895004560616}
