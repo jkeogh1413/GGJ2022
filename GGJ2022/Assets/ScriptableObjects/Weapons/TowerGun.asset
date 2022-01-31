@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2cdd5f26d027bf488a75661539e41c5, type: 3}
   m_Name: TowerGun
   m_EditorClassIdentifier: 
-  currentProfile: 0
+  currentProfile: 4
   profiles:
   - range: 3
     rateOfFire: 0.3
@@ -27,7 +27,7 @@ MonoBehaviour:
     weaponSpeed: 0
     cooldown: 0
   - range: 3
-    rateOfFire: 0.5
+    rateOfFire: 0.4
     projectileDamage: 10
     projectileSpeed: 4
     projectileLifespan: 5
@@ -39,9 +39,9 @@ MonoBehaviour:
     weaponSpeed: 0
     cooldown: 0
   - range: 3
-    rateOfFire: 0.5
+    rateOfFire: 0.4
     projectileDamage: 10
-    projectileSpeed: 6
+    projectileSpeed: 5
     projectileLifespan: 5
     projectileCount: 1
     projectileHoming: 0
@@ -51,6 +51,18 @@ MonoBehaviour:
     weaponSpeed: 0
     cooldown: 0
   - range: 4
+    rateOfFire: 0.4
+    projectileDamage: 10
+    projectileSpeed: 6
+    projectileLifespan: 5
+    projectileCount: 1
+    projectileHoming: 0
+    aoeRadius: -1
+    aoeLimit: 0
+    weaponSize: 0
+    weaponSpeed: 0
+    cooldown: 0
+  - range: 5
     rateOfFire: 0.5
     projectileDamage: 10
     projectileSpeed: 6
@@ -63,19 +75,7 @@ MonoBehaviour:
     weaponSpeed: 0
     cooldown: 0
   - range: 5
-    rateOfFire: 0.75
-    projectileDamage: 10
-    projectileSpeed: 6
-    projectileLifespan: 5
-    projectileCount: 1
-    projectileHoming: 0
-    aoeRadius: -1
-    aoeLimit: 0
-    weaponSize: 0
-    weaponSpeed: 0
-    cooldown: 0
-  - range: 5
-    rateOfFire: 0.75
+    rateOfFire: 0.5
     projectileDamage: 10
     projectileSpeed: 6
     projectileLifespan: 5
