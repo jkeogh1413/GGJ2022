@@ -114,6 +114,7 @@ public class PlayerInfo : MonoBehaviour
         currentXP = 0f;
         curLevel += 1;
         UIController.instance.lvlText.text = curLevel.ToString();
+        AudioManager.LevelUp();
 
         // Enable random power ups
         var powerUpsToSpawn = powerUps

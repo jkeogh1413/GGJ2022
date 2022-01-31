@@ -15,6 +15,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip buildSound;
     public AudioClip chop;
     public AudioClip gameOver;
+    public AudioClip levelUp;
 
     private void Start()
     {
@@ -29,4 +30,5 @@ public class AudioManager : MonoBehaviour
     public static void BuildSound() => instance.soundFXAudioSource.PlayOneShot(instance.buildSound);
     public static void Chop() => instance.soundFXAudioSource.PlayOneShot(instance.chop);
     public static void GameOverManGameOver() => instance.soundFXAudioSource.PlayOneShot(instance.gameOver);
+    public static void LevelUp() => instance.soundFXAudioSource.PlayOneShot(instance.levelUp);
 }

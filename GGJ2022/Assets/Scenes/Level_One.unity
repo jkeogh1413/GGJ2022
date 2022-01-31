@@ -1373,11 +1373,11 @@ PrefabInstance:
     - target: {fileID: 6521535097693047121, guid: 34ceb6e51c27bb848884e43307769c05, type: 3}
       propertyPath: m_TileSpriteArray.Array.data[0].m_Data
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: db372bda5fffdc943bf80063ba894546, type: 3}
     - target: {fileID: 6521535097693047121, guid: 34ceb6e51c27bb848884e43307769c05, type: 3}
       propertyPath: m_TileSpriteArray.Array.data[1].m_Data
       value: 
-      objectReference: {fileID: 21300000, guid: 61bf1ed5f1784424b8a2b48e7953584c, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6521535097693047121, guid: 34ceb6e51c27bb848884e43307769c05, type: 3}
       propertyPath: m_TileColorArray.Array.data[1].m_Data.a
       value: 1
@@ -1460,43 +1460,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6521535097693047121, guid: 34ceb6e51c27bb848884e43307769c05, type: 3}
       propertyPath: m_TileSpriteArray.Array.data[0].m_RefCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6521535097693047121, guid: 34ceb6e51c27bb848884e43307769c05, type: 3}
-      propertyPath: m_TileSpriteArray.Array.data[1].m_RefCount
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6521535097693047121, guid: 34ceb6e51c27bb848884e43307769c05, type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[1].m_RefCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6521535097693047121, guid: 34ceb6e51c27bb848884e43307769c05, type: 3}
       propertyPath: m_Tiles.Array.data[0].second.m_TileSpriteIndex
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6521535097693047121, guid: 34ceb6e51c27bb848884e43307769c05, type: 3}
       propertyPath: m_Tiles.Array.data[1].second.m_TileSpriteIndex
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6521535097693047121, guid: 34ceb6e51c27bb848884e43307769c05, type: 3}
       propertyPath: m_Tiles.Array.data[2].second.m_TileSpriteIndex
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6521535097693047121, guid: 34ceb6e51c27bb848884e43307769c05, type: 3}
       propertyPath: m_Tiles.Array.data[3].second.m_TileSpriteIndex
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6521535097693047121, guid: 34ceb6e51c27bb848884e43307769c05, type: 3}
       propertyPath: m_Tiles.Array.data[4].second.m_TileSpriteIndex
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6521535097693047121, guid: 34ceb6e51c27bb848884e43307769c05, type: 3}
       propertyPath: m_Tiles.Array.data[5].second.m_TileSpriteIndex
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6521535097693047121, guid: 34ceb6e51c27bb848884e43307769c05, type: 3}
       propertyPath: m_Tiles.Array.data[6].second.m_TileSpriteIndex
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6521535097693047121, guid: 34ceb6e51c27bb848884e43307769c05, type: 3}
       propertyPath: m_Tiles.Array.data[7].second.m_TileSpriteIndex
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6521535097693047121, guid: 34ceb6e51c27bb848884e43307769c05, type: 3}
       propertyPath: m_Tiles.Array.data[8].second.m_TileSpriteIndex
@@ -23162,7 +23162,7 @@ MonoBehaviour:
   maxHealth: 100
   wood: 0
   levelBaseXP: 400
-  levelXPMultiplier: 1.25
+  levelXPMultiplier: 1.15
   powerUps:
   - icon: {fileID: -166288785, guid: 2868a40a7a0f7794eb59e90c4d5ac2ca, type: 3}
     weapon: {fileID: 1047238085}
@@ -23681,19 +23681,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1893008526851067043, guid: 836f2de0a30b3084f8c3b7d9f9a06d5e, type: 3}
       propertyPath: dayConfig.Array.data[3].phase2NPCCount
-      value: 200
+      value: 175
       objectReference: {fileID: 0}
     - target: {fileID: 1893008526851067043, guid: 836f2de0a30b3084f8c3b7d9f9a06d5e, type: 3}
       propertyPath: dayConfig.Array.data[4].phase2NPCCount
-      value: 275
+      value: 225
       objectReference: {fileID: 0}
     - target: {fileID: 1893008526851067043, guid: 836f2de0a30b3084f8c3b7d9f9a06d5e, type: 3}
       propertyPath: dayConfig.Array.data[5].phase2NPCCount
-      value: 350
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1893008526851067043, guid: 836f2de0a30b3084f8c3b7d9f9a06d5e, type: 3}
       propertyPath: dayConfig.Array.data[6].phase2NPCCount
-      value: 450
+      value: 375
       objectReference: {fileID: 0}
     - target: {fileID: 1893008526851067044, guid: 836f2de0a30b3084f8c3b7d9f9a06d5e, type: 3}
       propertyPath: m_RootOrder
@@ -23773,6 +23773,10 @@ PrefabInstance:
       propertyPath: chop
       value: 
       objectReference: {fileID: 8300000, guid: d9466f32d179d094fa2d3aa4a590feae, type: 3}
+    - target: {fileID: 1841224009, guid: 50bb451a600a1a94696dc5263209353d, type: 3}
+      propertyPath: levelUp
+      value: 
+      objectReference: {fileID: 8300000, guid: 0cf5f74a6d4155b4980177e2fbd21b64, type: 3}
     - target: {fileID: 1841224009, guid: 50bb451a600a1a94696dc5263209353d, type: 3}
       propertyPath: buildSound
       value: 

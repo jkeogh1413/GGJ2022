@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2cdd5f26d027bf488a75661539e41c5, type: 3}
   m_Name: Umbrella Aura
   m_EditorClassIdentifier: 
-  currentProfile: 0
+  currentProfile: 1
   profiles:
   - range: 0
     rateOfFire: 0
@@ -35,18 +35,6 @@ MonoBehaviour:
     projectileHoming: 0
     aoeRadius: 0
     aoeLimit: 0
-    weaponSize: 1
-    weaponSpeed: 70
-    cooldown: 1
-  - range: 0
-    rateOfFire: 0
-    projectileDamage: 0
-    projectileSpeed: 0
-    projectileLifespan: 0
-    projectileCount: 0
-    projectileHoming: 0
-    aoeRadius: 0
-    aoeLimit: 0
     weaponSize: 1.2
     weaponSpeed: 70
     cooldown: 1
@@ -59,7 +47,19 @@ MonoBehaviour:
     projectileHoming: 0
     aoeRadius: 0
     aoeLimit: 0
-    weaponSize: 1.2
+    weaponSize: 1.4
+    weaponSpeed: 70
+    cooldown: 1
+  - range: 0
+    rateOfFire: 0
+    projectileDamage: 0
+    projectileSpeed: 0
+    projectileLifespan: 0
+    projectileCount: 0
+    projectileHoming: 0
+    aoeRadius: 0
+    aoeLimit: 0
+    weaponSize: 1.6
     weaponSpeed: 70
     cooldown: 0.8
   - range: 0
@@ -71,7 +71,7 @@ MonoBehaviour:
     projectileHoming: 0
     aoeRadius: 0
     aoeLimit: 0
-    weaponSize: 1.2
+    weaponSize: 1.8
     weaponSpeed: 90
     cooldown: 0.8
   - range: 0
@@ -83,6 +83,6 @@ MonoBehaviour:
     projectileHoming: 0
     aoeRadius: 0
     aoeLimit: 0
-    weaponSize: 1.4
+    weaponSize: 2
     weaponSpeed: 90
     cooldown: 0.8
