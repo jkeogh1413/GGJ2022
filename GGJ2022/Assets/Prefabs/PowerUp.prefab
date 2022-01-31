@@ -4862,7 +4862,8 @@ MonoBehaviour:
   weaponToEnable: {fileID: 0}
   weaponStatsToUpgrade: {fileID: 0}
   iconRenderer: {fileID: 6235184204521226393}
-  lifespan: 10
+  lifespan: 30
+  notification: {fileID: 0}
 --- !u!58 &2140700506649008320
 CircleCollider2D:
   m_ObjectHideFlags: 0
