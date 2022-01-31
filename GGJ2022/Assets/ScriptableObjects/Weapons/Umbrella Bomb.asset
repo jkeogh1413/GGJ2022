@@ -17,11 +17,11 @@ MonoBehaviour:
   - range: 5
     rateOfFire: 0.2
     projectileDamage: 10
-    projectileSpeed: 4
+    projectileSpeed: 8
     projectileLifespan: 4
     projectileCount: 1
     projectileHoming: 0
-    aoeRadius: 1.5
+    aoeRadius: 2.5
     aoeLimit: 3
     weaponSize: 0
     weaponSpeed: 0
@@ -29,60 +29,60 @@ MonoBehaviour:
   - range: 7
     rateOfFire: 0.2
     projectileDamage: 10
-    projectileSpeed: 4
+    projectileSpeed: 8
     projectileLifespan: 4
     projectileCount: 1
     projectileHoming: 0
-    aoeRadius: 1.75
-    aoeLimit: 3
+    aoeRadius: 3
+    aoeLimit: 4
     weaponSize: 0
     weaponSpeed: 0
     cooldown: 0
   - range: 7
-    rateOfFire: 0.3
+    rateOfFire: 0.4
     projectileDamage: 10
-    projectileSpeed: 4
+    projectileSpeed: 8
     projectileLifespan: 4
     projectileCount: 1
     projectileHoming: 0
-    aoeRadius: 1.75
-    aoeLimit: 3
+    aoeRadius: 3
+    aoeLimit: 4
     weaponSize: 0
     weaponSpeed: 0
     cooldown: 0
   - range: 7
-    rateOfFire: 0.3
+    rateOfFire: 0.4
     projectileDamage: 10
-    projectileSpeed: 5
+    projectileSpeed: 10
     projectileLifespan: 4
     projectileCount: 1
     projectileHoming: 0
-    aoeRadius: 2
-    aoeLimit: 3
+    aoeRadius: 3
+    aoeLimit: 4
     weaponSize: 0
     weaponSpeed: 0
     cooldown: 0
   - range: 9
-    rateOfFire: 0.5
+    rateOfFire: 0.6
     projectileDamage: 10
-    projectileSpeed: 5
+    projectileSpeed: 10
     projectileLifespan: 4
     projectileCount: 1
     projectileHoming: 0
-    aoeRadius: 2
-    aoeLimit: 3
+    aoeRadius: 4
+    aoeLimit: 5
     weaponSize: 0
     weaponSpeed: 0
     cooldown: 0
   - range: 9
-    rateOfFire: 0.5
+    rateOfFire: 0.6
     projectileDamage: 10
-    projectileSpeed: 6
+    projectileSpeed: 10
     projectileLifespan: 4
     projectileCount: 2
     projectileHoming: 1
-    aoeRadius: 2
-    aoeLimit: 3
+    aoeRadius: 4
+    aoeLimit: 5
     weaponSize: 0
     weaponSpeed: 0
     cooldown: 0
