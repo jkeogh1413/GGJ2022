@@ -124,12 +124,14 @@ public class PhaseManager : MonoBehaviour
     }
 
     IEnumerator SpawnRushNPCs(int numNPCs, float duration, GameObject npcType) {
+        float spread = 10f;
         float waitTime = duration / numNPCs;
         for (int i = 0; i < numNPCs; i++) {
             // Pick a random spawn point
             GameObject curSpawn = rushSpawnPoints[UnityEngine.Random.Range(0, rushSpawnPoints.Length)];
             if (curSpawn != null) {
-                GameObject newNPC = Instantiate(npcType, curSpawn.transform.position, Quaternion.identity, this.transform);
+                Vector3 offset = new Vector3(UnityEngine.Random.Range(-spread, spread), UnityEngine.Random.Range(-spread, spread), 0f);
+                GameObject newNPC = Instantiate(npcType, curSpawn.transform.position + offset, Quaternion.identity, this.transform);
             }
             yield return new WaitForSeconds(waitTime);
         }
